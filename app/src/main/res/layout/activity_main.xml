@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <androidx.cardview.widget.CardView
+
+        android:layout_width="match_parent"
+
+        android:layout_height="500dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="60dp"
+        android:layout_marginRight="20dp"
+        app:cardCornerRadius="10dp"
+
+        app:cardElevation="20dp">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/influances"
+                android:layout_width="match_parent"
+                android:layout_height="90dp"
+                android:background="#E91E63"
+                android:gravity="center"
+                android:text="INFLUANCES"
+                android:textColor="#F5F5F5"
+
+
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/user_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/influances"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="40dp"
+
+                android:text="UserID/Email"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+
+                />
+
+            <EditText
+                android:id="@+id/username_field"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/user_name"
+                android:layout_marginLeft="10dp"
+                android:padding="6dp"
+                android:background="@drawable/edit"
+
+                android:layout_marginRight="10dp"
+
+                android:drawableLeft="@drawable/account"
+                android:drawablePadding="10dp"
+
+                android:hint="Username/Email ID"
+
+                android:inputType="none" />
+
+            <TextView
+                android:id="@+id/password"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:layout_below="@id/username_field"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="15dp"
+                android:text="Password"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+
+                />
+
+            <EditText
+                android:id="@+id/password_field"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/password"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/edit"
+
+                android:drawableLeft="@drawable/eye"
+                android:drawablePadding="10dp"
+                android:hint="Password"
+
+                android:inputType="textPassword"
+                android:padding="6dp" />
+
+            <CheckBox
+
+                android:id="@+id/checkbox"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/password_field"
+                android:layout_alignParentLeft="true"
+                android:layout_marginTop="24dp"
+                android:text="Remember me"
+                android:textColor="@color/black" />
+
+            <Button
+                android:id="@+id/button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/password_field"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="24dp"
+                android:layout_marginRight="30dp"
+                android:backgroundTint="#4CAF50"
+                android:drawableLeft="@drawable/login"
+                android:onClick="submitDetails"
+                android:text="log in"
+                android:textSize="14sp"
+
+                />
+
+            <TextView
+                android:id="@+id/forgot"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/checkbox"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="16dp"
+                android:drawableLeft="@drawable/lock"
+                android:drawablePadding="4dp"
+                android:text="Forgot your password?"
+
+
+                />
+
+
+            <TextView
+                android:id="@+id/create"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/forgot"
+                android:layout_marginTop="16dp"
+                android:text="Create an Account"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+
+
+                />
+
+            <TextView
+                android:id="@+id/i_am"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/create"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="16dp"
+                android:text="I am an Influencer"
+                android:textSize="14sp"
+
+
+                />
+
+
+
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/i_am"
+                android:layout_marginLeft="10dp"
+                android:text="I am an Advertizer"
+                android:textSize="14sp"
+
+
+                />
+
+
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+
+</RelativeLayout>
